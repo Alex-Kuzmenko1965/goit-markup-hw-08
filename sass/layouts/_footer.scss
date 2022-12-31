@@ -1,21 +1,43 @@
 .footer {
-  padding: 60px 0;
+  padding: 60px 0;  
   background-color: var(--background-dark-color);
 }
 
 .footer__container {
-  display: flex;
-  width: 1200px;
-  align-items: baseline;
+  display: block;
+  width: 100%;  
   padding: 0 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+  }
+}
+.footer__block:not(:last-child) {
+  margin-bottom: 60px;
 }
 
-.footer__block:not(:last-child) {
-  margin-right: 93px;
+.footer__block {
+  display: block;  
+  
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 93px;
+    }
+  }  
 }
+
 
 .footer__logo {
+  display: flex;
+  justify-content: center;
+
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -47,14 +69,25 @@
   letter-spacing: 0.03em;
   color: var(--light-color);
 }
+.footer p {
+  display: flex;
+  justify-content: center;
+  
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 
 .footer__address-text p,
-.footer__nav .item {
-  margin-bottom: 9px;
+.footer__nav .footer__item {
+  margin-bottom: 8px;
 }
 
 .footer__tel,
 .footer__mail {
+  display: flex;
+  justify-content: center;  
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -64,6 +97,10 @@
   color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .footer__tel:hover,
@@ -78,6 +115,9 @@
 }
 
 .footer__subtitle {
+  display: flex;
+  justify-content: center;
+
   margin-bottom: 20px;
 
   font-family: 'Roboto';
@@ -130,8 +170,8 @@
   transition: color 250ms var(--timing-function);
 }
 
-.footer__input {
-  width: 358px;
+.footer__input {  
+  width: 450px;
   height: 50px;
   padding: 15px;
   background-color: transparent;
@@ -146,6 +186,10 @@
   color: rgba(255, 255, 255, 0.6);
 
   transform: border-color 250ms var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer__input:hover {
@@ -155,14 +199,15 @@
   transform: var(--border-color);
 }
 
-.footer__send-btn {
-  padding-left: 28px;
-  padding-right: 62px;
+.footer__send-btn {  
   border-radius: 4px;
   border-color: transparent;
   background-color: var(--accent-color);
   font-weight: 700;
   margin: 0 0;
+  padding-left: 28px;
+  padding-right: 62px;
+  height: 50px;
 
   font-family: inherit;
   font-weight: 700;
@@ -182,13 +227,33 @@
   color: var(--title-text-color);
 }
 
-.footer__mailing {
-  position: relative;
+.footer__mailing {  
   display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 20px;
+  
 }
 
-form .footer__mailing+.footer__mailing {
-  margin-left: 12px;
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    margin-bottom: 0;
+  }
+
+  .footer__logo, .footer__subtitle {
+    display: inline-block;
+  }
+
+  .footer__form {
+    position: relative;
+    display: flex;
+  }
+  .footer__mailing {
+    margin-bottom: 0;
+  }
+  form .footer__mailing+.footer__mailing {
+    margin-left: 12px;  
+  }
 }
 
 .footer__send-icon {

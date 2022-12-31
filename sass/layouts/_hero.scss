@@ -1,16 +1,28 @@
 .hero {
   max-width: 1600px;
-  background-image: url('../images/img-fon.jpg');
+  background-image: url('../images/img-fon-mob.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
 
-&__container {
-  background-color: rgba(47, 48, 58, 0.4);
-  margin: 0 auto;
-  padding: 120px 0;
-}
+  &__container {
+      background-color: rgba(47, 48, 58, 0.4);
+      margin: 0 auto;
+      padding: 120px 0;
+    }
+
+  @media screen and (min-width: 1200px) {
+      background-image: url('../images/img-fon-tablet.jpg');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/img-fon-desctop.jpg');
+
+    &__container {
+      padding: 200px 0;
+    }    
+  }
 
 &__title {
   display: block;  
