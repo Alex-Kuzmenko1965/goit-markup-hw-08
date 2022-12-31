@@ -5,26 +5,33 @@
 
 .footer__container {
   display: block;
-  width: 100%;  
-  padding: 0 15px;
+  width: 100%; 
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;  
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
-    width: 1200px;
+    align-items: baseline;    
   }
 }
+
 .footer__block:not(:last-child) {
   margin-bottom: 60px;
 }
 
 .footer__block {
-  display: block;  
+  display: block; 
+  
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-right: 165px;
+    }
+  }
   
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
@@ -32,7 +39,6 @@
     }
   }  
 }
-
 
 .footer__logo {
   display: flex;
@@ -69,6 +75,7 @@
   letter-spacing: 0.03em;
   color: var(--light-color);
 }
+
 .footer p {
   display: flex;
   justify-content: center;
@@ -141,7 +148,7 @@
   height: 44px;
 }
 
-.footer__soc-item:not( :last-child) {
+.footer__soc-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -229,10 +236,18 @@
 
 .footer__mailing {  
   display: flex;
+  
+  margin: 0 auto;
   position: relative;
   justify-content: center;
-  margin-bottom: 20px;
   
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.footer__mailing:not( :last-child) {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -258,10 +273,15 @@
 
 .footer__send-icon {
   position: absolute;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
   fill: currentColor;
+  
+  @media screen and (min-width: 480px) {
+    right: 153px;
+  }  
+
+  @media screen and (min-width: 1200px) {    
+    right: 28px;    
+  }
 
   transition: fill 250ms var(--timing-function);
 }
