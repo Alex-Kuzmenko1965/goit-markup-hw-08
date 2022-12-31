@@ -579,7 +579,7 @@ body {
   margin: 0 auto;
   padding: 120px 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: url("../images/img-fon-tablet.jpg");
   }
