@@ -115,7 +115,6 @@ body {
   font-weight: 700;
   margin: 0 auto;
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -597,7 +596,7 @@ body {
   margin: 0 auto;
 }
 .hero__container {
-  background-color: rgba(47, 48, 58, 0.4);
+  background: rgba(47, 48, 58, 0.4);
   margin: 0 auto;
   padding: 120px 0;
 }
@@ -659,10 +658,10 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
   padding: 40px 40px;
-  transform: translate(-50%, -50%) scale(1);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
   transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
   min-width: 450px;
   min-height: 609px;
@@ -673,6 +672,9 @@ body {
   .modal {
     min-width: 528px;
     min-height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
