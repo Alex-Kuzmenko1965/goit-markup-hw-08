@@ -18,13 +18,13 @@
     <a class="header__logo link" href="./">
       <span class="header__logo--cyan">Web</span>Studio
     </a>
-    <button type="button" class="header__menu-button">
+    <button type="button" class="header__menu-button is-open-menu">
       <svg wight="40" height="40" aria-label="Перемикач мобільного меню">
-        <use href="./images/icons.svg#icon-close"></use>
-        <use href="./images/icons.svg#icon-menu"></use>
+        <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
+        <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
       </svg>
     </button>    
-    <div ckass="menu-container" id="menu-container"></div>
+    <!-- <div ckass="menu-container" id="menu-container"></div> -->
     <div class="header__desctop-nav">
     <ul class="header__list list">
       <li class="header__item"><a href="./" class="header__link-select link">Студія</a></li>
@@ -45,7 +45,7 @@
           </svg>+38 096 111 11 11</a></li>
     </ul>
     </div>
-  </nav>
+  </nav>  
 </header>
     <!-- Основна сторінка сайту-->  
     <main>  
@@ -383,5 +383,9 @@
         </div>
       </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
