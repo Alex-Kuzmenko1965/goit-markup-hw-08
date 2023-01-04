@@ -670,7 +670,7 @@ body {
   font-weight: 700;
   margin: 0 0;
   padding-left: 28px;
-  padding-right: 62px;
+  padding-right: 30px;
   height: 50px;
   font-family: inherit;
   font-weight: 700;
@@ -724,19 +724,9 @@ body {
   }
 }
 .footer__send-icon {
-  position: absolute;
   fill: currentColor;
+  margin-left: 12px;
   transition: fill 250ms var(--timing-function);
-}
-@media screen and (min-width: 480px) {
-  .footer__send-icon {
-    right: 153px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__send-icon {
-    right: 28px;
-  }
 }
 
 .footer__send-btn:hover,
