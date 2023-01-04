@@ -71,7 +71,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  max-height: 1560px;
+  height: 100vw;
   padding: 40px;
   background-color: var(--light-color);
   z-index: 999;
@@ -217,7 +217,7 @@
 .header__auth {
   display: inline-block;
   align-items: baseline;
-  padding-top: 100px;  
+  padding-top: 300px;  
 
   @media screen and (min-width: 768px) {    
     flex-direction: column;
