@@ -171,6 +171,7 @@
 }
 
 .center-checkbox {
+  display: flex;
   padding: 0 0;
   margin-bottom: 30px;
 
@@ -182,6 +183,8 @@
 .modal__checkbox {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
+  flex-grow: 1;
   padding: 0 0;
 
   @media screen and (min-width: 1200px) {
@@ -204,6 +207,7 @@
 }
 
 .checkbox {
+  display: none;
   appearance: none;
 }
 
@@ -226,6 +230,7 @@
 
 .modal__umovi {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   margin-left: 6px;
   font-weight: 400;
