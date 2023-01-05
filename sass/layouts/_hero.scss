@@ -37,7 +37,7 @@
     text-transform: uppercase;
     color: var(--light-color);
   }
-  
+
   @media screen and (min-width: 1200px) {
   &__title {
     width: 700px;
@@ -46,8 +46,8 @@
 }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-  .hero {background-image: url('../images/img-fon-mob.jpg');}
-}
+// @media screen and (min-device-pixel-ratio: 2),
+// screen and (min-resolution: 192dpi),
+// screen and (min-resolution: 2dppx) {
+//   .hero {background-image: url('../images/img-fon-mob.jpg');}
+// }
