@@ -244,6 +244,9 @@
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  align-content:flex-end;
   position: fixed;
   top: 0;
   left: 0;
@@ -271,11 +274,13 @@
 
 .mobile-menu {
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .mobile-menu__dop {
-  display: inline-block;
+  display: block;
 }
 
 .menu-container .menu-toggle {
