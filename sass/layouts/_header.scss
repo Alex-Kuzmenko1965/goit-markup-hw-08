@@ -165,7 +165,7 @@
 .header__auth {
   display: inline-block;
   align-items: baseline;
-  padding-top: 300px;  
+  // padding-top: 32px;  
 
   @media screen and (min-width: 768px) {    
     flex-direction: column;
@@ -270,6 +270,11 @@
 }
 
 .mobile-menu {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mobile-menu__dop {
   display: inline-block;
 }
 

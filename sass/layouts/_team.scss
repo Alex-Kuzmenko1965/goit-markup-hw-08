@@ -1,6 +1,7 @@
 .team {
   margin: 0 0;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
   background: var(--grey-color);
 
   &__list {
@@ -15,6 +16,7 @@
     padding-bottom: 30px;
     background-color: var(--light-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 768px) {
@@ -22,7 +24,8 @@
       margin: 0 -15px;
     }
     &__item {
-      margin: 0 15px;
+      margin-left: 15px;
+      margin-right: 15px;
       width: calc((100% - 60px) / 2);
     }
   }

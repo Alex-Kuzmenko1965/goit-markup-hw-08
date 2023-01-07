@@ -28,12 +28,13 @@
 
   @media screen and (min-width: 768px) {
     &:first-child {
-      margin-right: 165px;
+      margin-right: 165px;      
     }
   }
 
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
+      margin-bottom: 0;
       margin-right: 93px;
     }
   }
@@ -297,14 +298,3 @@
   fill: var(--title-text-color);
 }
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -1,11 +1,8 @@
 .hero {
   max-width: 1600px;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/img-fon-mob.jpg');
-  }  
+  
+  background-image: url('../images/img-fon-mob.jpg');
+   
    
   background-size: cover;
   background-position: center;
@@ -18,26 +15,21 @@
       padding: 120px 0;
     }
 
-  @media screen and (min-width: 768px) screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {    
+  @media screen and (min-width: 768px) {    
       background-image: url('../images/img-fon-tablet.jpg');
   }
 
-  @media screen and (min-width: 1200px) screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+  @media screen and (min-width: 1200px) {
     background-image: url('../images/img-fon-desctop.jpg');
-  }
 
     &__container {
       padding: 200px 0;
-    }    
+    }
   }
 
   &__title {
     display: block;  
-    width: 360px;
+    max-width: 360px;
     margin: 0 auto 30px;
 
     font-weight: 900;  
@@ -50,8 +42,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-  &__title {
-    width: 700px;
-    font-size: 44px;
+    &__title {
+      max-width: 700px;
+      font-size: 44px;
+    }
   }
 }
