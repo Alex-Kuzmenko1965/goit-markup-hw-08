@@ -858,6 +858,10 @@ body {
   border: var(--light-color);
 }
 
+.modal__input-wrapper input {
+  outline: none;
+}
+
 .lab-form {
   display: block;
   margin-bottom: 4px;
@@ -874,21 +878,14 @@ body {
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
+  outline: none;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
-.modal__text::-moz-placeholder {
-  background-color: transparent;
-  border-color: var(--accent-color);
-}
-.modal__text:-ms-input-placeholder {
-  background-color: transparent;
-  border-color: var(--accent-color);
-}
-.modal__text:hover, .modal__text::placeholder {
+.modal__text:hover, .modal__text:focus {
   background-color: transparent;
   border-color: var(--accent-color);
 }
@@ -963,21 +960,25 @@ body {
   font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  outline: none;
 }
 @media screen and (min-width: 1200px) {
   .modal__umovi {
     font-size: 14px;
   }
 }
+.modal__umovi:hover, .modal__umovi:focus {
+  text-decoration: none;
+}
 
 .form-send-btn {
-  display: inline-block;
   padding: 10px 52px;
   border-radius: 4px;
   border-color: transparent;
   background-color: var(--accent-color);
   font-weight: 700;
   margin: 0 auto;
+  outline: none;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -993,13 +994,16 @@ body {
   color: var(--title-text-color);
 }
 
-.close-icon {
+.modal__close {
   width: 30px;
   height: 30px;
   padding: 6px;
+  outline: none;
+}
+
+.close-icon {
   background-color: transparent;
   fill: var(--title-text-color);
-  border: none;
 }
 .close-icon:hover, .close-icon:focus {
   fill: var(--accent-color);

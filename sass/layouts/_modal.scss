@@ -114,6 +114,10 @@
   }
 }
 
+.modal__input-wrapper input {
+  outline: none;
+}
+
 .lab-form {
   display: block;
   margin-bottom: 4px;
@@ -125,11 +129,12 @@
 
 .modal__text {
   width: 100%;
-  height: 120px;
+  height: 120px;  
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
+  outline: none;
 
   font-weight: 400;
   font-size: 12px;
@@ -138,7 +143,7 @@
   color: var(--primary-text-color);
 
   &:hover,
-  &::placeholder {
+  &:focus {
     background-color: transparent;
     border-color: var(--accent-color);
   }
@@ -211,20 +216,25 @@
   font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  outline: none;  
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
-.form-send-btn {
-  display: inline-block;
+.form-send-btn {  
   padding: 10px 52px;
   border-radius: 4px;
   border-color: transparent;
   background-color: var(--accent-color);
   font-weight: 700;
   margin: 0 auto;
+  outline: none;
 
   font-family: inherit;
   font-weight: 700;
@@ -243,14 +253,16 @@
     color: var(--title-text-color);
   }
 }
-
-.close-icon {
+.modal__close {
   width: 30px;
   height: 30px;
   padding: 6px;
+  outline: none;  
+}
+
+.close-icon {   
   background-color: transparent;
-  fill: var(--title-text-color);
-  border: none; 
+  fill: var(--title-text-color);  
 
   &:hover,
   &:focus {
