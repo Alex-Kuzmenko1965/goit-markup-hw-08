@@ -780,12 +780,18 @@ body {
   left: 50%;
   transform: translateX(-50%) scale(1);
   transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
-  min-width: 450px;
-  min-height: 609px;
+  max-width: 100%;
+  min-height: auto;
   border-radius: 4px;
   background: var(--light-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
   .modal {
     min-width: 528px;
     min-height: 581px;
